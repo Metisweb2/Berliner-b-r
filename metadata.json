@@ -1,0 +1,6 @@
+{
+  "name": "Fahrschule Bär",
+  "description": "Premium Fahrschule in Berlin",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

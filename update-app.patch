@@ -1,0 +1,39 @@
+--- src/App.tsx
++++ src/App.tsx
+@@ -4,6 +4,7 @@
+ import { Intro } from './components/Intro';
+ import { Navbar } from './components/Navbar';
+ import { Footer } from './components/Footer';
++import { BearLogo } from './components/BearLogo';
+ 
+ // Lazy loading pages for Code Splitting (Performance Optimization)
+ const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
+@@ -16,6 +17,7 @@
+ const Legal = lazy(() => import('./pages/Legal').then(m => ({ default: m.Legal })));
+ const AdminVideos = lazy(() => import('./pages/AdminVideos').then(m => ({ default: m.AdminVideos })));
+ const Karriere = lazy(() => import('./pages/Karriere').then(m => ({ default: m.Karriere })));
++const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
+ 
+ function ScrollHandler() {
+   const { pathname, hash } = useLocation();
+@@ -37,8 +39,10 @@
+ function PageLoader() {
+   return (
+     <div className="min-h-screen flex flex-col items-center justify-center bg-dark-bg pt-20">
+-      <div className="w-12 h-12 border-2 border-white/10 border-t-primary rounded-full animate-spin mb-4"></div>
+-      <p className="text-neutral-500 font-mono text-sm tracking-widest uppercase animate-pulse">Lade Seite...</p>
++      <div className="relative flex items-center justify-center">
++        <BearLogo className="w-12 h-12 object-contain z-10 animate-pulse" />
++        <div className="absolute inset-[-1rem] border-2 border-white/10 border-t-primary rounded-full animate-spin"></div>
++      </div>
+     </div>
+   );
+ }
+@@ -74,6 +78,7 @@
+               <Route path="/impressum" element={<Legal />} />
+               <Route path="/datenschutz" element={<Legal />} />
+               <Route path="/agb" element={<Legal />} />
++              <Route path="*" element={<NotFound />} />
+             </Routes>
+           </Suspense>
+           {!isAdmin && <Footer />}

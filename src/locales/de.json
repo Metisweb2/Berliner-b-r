@@ -1,0 +1,465 @@
+{
+  "nav": {
+    "start": "Startseite",
+    "classes": "Führerscheine",
+    "theory": "Theorie",
+    "pricing": "Preise",
+    "about": "Über uns",
+    "faq": "FAQ",
+    "career": "Karriere",
+    "contact": "Kontakt",
+    "register": "Jetzt anmelden",
+    "legal": "Rechtliches"
+  },
+  "hero": {
+    "title1": "Dein Führerschein.",
+    "title2": "Dein nächster Schritt im Leben!",
+    "description": "Neue Freiheit, neue Möglichkeiten und neue Wege liegen vor dir. Lass jede Fahrt Spaß machen, dir Sicherheit geben und nur positive Eindrücke hinterlassen!",
+    "cta1": "Führerschein starten",
+    "cta2": "Unsere Klassen entdecken"
+  },
+  "reviews": {
+    "title": "Definitiv die beste Wahl",
+    "onGoogle": "Auf Google",
+    "verified": "Verifizierter Kunde",
+    "months": {
+      "1": "Vor 1 Monat",
+      "3": "Vor 3 Monaten"
+    },
+    "texts": {
+      "1": "Super Fahrschule! Die Fahrlehrer sind geduldig, professionell und bereiten einen perfekt auf die Prüfung vor. Man fühlt sich sehr gut aufgehoben. Habe meinen Führerschein beim ersten Mal bestanden!",
+      "2": "Die Fahrzeuge sind modern und top gepflegt. Ein großes Lob an das gesamte Team für die tolle Unterstützung. Die Theorie und Praxisstunden haben richtig Spaß gemacht. Sehr zu empfehlen!",
+      "3": "Top Organisation! Von der Anmeldung bis zur praktischen Prüfung lief alles reibungslos. Sehr geduldige und verständnisvolle Fahrlehrer, die eine entspannte Lernatmosphäre schaffen."
+    }
+  },
+  "career": {
+    "subtitle": "Werde Teil des Teams",
+    "title": "Fahrlehrer/in (m/w/d) gesucht",
+    "description": "Fahrschule Berliner Bär GmbH in Marzahn sucht eine/n engagierte/n und nette/n Fahrlehrer/in zur Verstärkung unseres Teams. Berufsanfänger und Fahrlehreranwärter sind bei uns herzlich willkommen!",
+    "benefits": {
+      "salary": {
+        "title": "Gehalt",
+        "desc": "27 € pro Stunde für deine engagierte Arbeit."
+      },
+      "vacation": {
+        "title": "Jahresurlaub",
+        "desc": "30 Tage Urlaub, um neue Energie zu tanken."
+      },
+      "car": {
+        "title": "Fahrschulauto",
+        "desc": "Ein moderner Mercedes Benz C Klasse steht dir zur Verfügung."
+      },
+      "team": {
+        "title": "Team & Atmosphäre",
+        "desc": "Ein nettes Team und eine freundliche, entspannte Atmosphäre."
+      }
+    },
+    "contact": {
+      "title": "Interesse geweckt?",
+      "description": "Wir freuen uns auf deinen Besuch oder Anruf! Werde Teil einer modernen Fahrschule und starte mit uns durch.",
+      "addressLabel": "Standort",
+      "phoneLabel": "Telefon",
+      "cta": "Jetzt anrufen"
+    }
+  },
+  "usps": {
+    "title_start": "Warum ",
+    "title_highlight": "Fahrschule Bär?",
+    "desc": "Wir machen den Weg zu deinem Führerschein so einfach, entspannt und erfolgreich wie möglich. Deine Vorteile auf einen Blick:",
+    "items": {
+      "1": {
+        "title": "Geduldige Fahrlehrer",
+        "desc": "Stressfrei zum Führerschein. Unsere erfahrenen Fahrlehrer erklären alles in Ruhe und passen sich deinem individuellen Lerntempo an."
+      },
+      "2": {
+        "title": "Moderne Fahrzeuge",
+        "desc": "Ausbildung auf dem neuesten Stand. Lerne mit modernsten Assistenzsystemen in unseren hochwertigen und sicheren Fahrzeugen."
+      },
+      "3": {
+        "title": "Flexible Fahrzeiten",
+        "desc": "Dein Führerschein, dein Zeitplan. Wir richten uns nach deinem Alltag – egal ob vor der Arbeit, nach der Schule oder am Wochenende."
+      },
+      "4": {
+        "title": "Persönliche Betreuung",
+        "desc": "Du bist keine Nummer. Von der ersten Theoriestunde bis zur praktischen Prüfung stehen wir dir bei allen Fragen persönlich zur Seite."
+      },
+      "5": {
+        "title": "Transparente Preise",
+        "desc": "Volle Kostenkontrolle von Anfang an. Keine versteckten Gebühren oder bösen Überraschungen – faire Preise sind für uns selbstverständlich."
+      },
+      "6": {
+        "title": "Hohe Erfolgsquote",
+        "desc": "Unser gemeinsames Ziel ist dein Erfolg beim ersten Versuch. Wir bereiten dich so vor, dass du dich im Straßenverkehr 100 % sicher fühlst."
+      }
+    }
+  },
+  "pricing": {
+    "classes": {
+      "b": "Klasse B (Schalter)",
+      "b197": "Klasse B197 (Automatik)",
+      "be": "Klasse BE (Anhänger)",
+      "b96": "Klasse B96 (Anhänger)",
+      "a": "Klasse A (Motorrad)"
+    },
+    "fees": {
+      "base": {
+        "title": "Grundbetrag",
+        "desc": "Theorieunterricht & Verwaltung"
+      },
+      "practice": {
+        "title": "Übungsfahrt",
+        "desc": "Reguläre Fahrstunde (45 Min.)"
+      },
+      "special": {
+        "title": "Sonderfahrten",
+        "desc": "Überland, Autobahn, Nacht (45 Min.)"
+      },
+      "theory_exam": {
+        "title": "Theorieprüfung",
+        "desc": "Amtliche Vorstellung zur Prüfung"
+      },
+      "practice_exam": {
+        "title": "Praxisprüfung",
+        "desc": "Amtliche Vorstellung zur Prüfung"
+      },
+      "b96_course": {
+        "title": "Tageskurs",
+        "desc": "Komplette theoretische & praktische Schulung"
+      }
+    },
+    "title_start": "Transparente ",
+    "title_highlight": "Leistungen",
+    "subtitle": "Unsere Preise",
+    "title": "Transparent & Fair",
+    "items": {
+      "1": {
+        "title": "Grundbetrag",
+        "desc": "Die Basis für deine Ausbildung. Inklusive aller Theoriestunden und administrativer Betreuung.",
+        "from": "ab"
+      },
+      "2": {
+        "title": "Übungsfahrt",
+        "desc": "45 Minuten Praxis. Wir üben alle Grundfahraufgaben und das sichere Fahren im Alltag.",
+        "from": "ab"
+      },
+      "3": {
+        "title": "Sonderfahrten",
+        "desc": "45 Minuten Überland, Autobahn oder bei Dunkelheit. Pflichtstunden für deine Prüfung.",
+        "from": "ab"
+      },
+      "4": {
+        "title": "Prüfung",
+        "desc": "Wir begleiten dich zur theoretischen und praktischen Prüfung. Inklusive Warm-up Fahrt.",
+        "from": "ab"
+      }
+    },
+    "disclaimer": "* Alle Preise verstehen sich inkl. der gesetzlichen MwSt. TÜV-Gebühren für Prüfungen werden separat erhoben. Stand 2024."
+  },
+  "classes": {
+    "subtitle": "Unser Ausbildungsangebot",
+    "title1": "Welche Klasse",
+    "title2": "möchtest du fahren?",
+    "learn_more": "Mehr erfahren",
+    "items": {
+      "B": {
+        "title": "Klasse B",
+        "desc": "Der Klassiker. PKW-Führerschein für Autos bis 3,5t.",
+        "requirements": [
+          "Mindestalter: 18 Jahre (17 Jahre bei BF17)",
+          "Lichtbild (biometrisch)",
+          "Sehtest (nicht älter als 2 Jahre)",
+          "Erste-Hilfe-Kurs"
+        ],
+        "theory": [
+          "12 Doppelstunden Grundstoff",
+          "2 Doppelstunden Zusatzstoff (Klasse B)",
+          "Theorieprüfung (frühestens 3 Monate vor Geburtstag)"
+        ],
+        "practice": [
+          "Grundausbildung nach Fahrschüler-Ausbildungsordnung",
+          "5 Sonderfahrten Überland (à 45 Min.)",
+          "4 Sonderfahrten Autobahn (à 45 Min.)",
+          "3 Sonderfahrten bei Dunkelheit (à 45 Min.)",
+          "Praktische Prüfung (55 Minuten)"
+        ]
+      },
+      "B197": {
+        "title": "Klasse B197",
+        "desc": "Entspannt auf Automatik lernen, aber Schalter fahren dürfen.",
+        "requirements": [
+          "Mindestalter: 18 Jahre (17 Jahre bei BF17)",
+          "Lichtbild (biometrisch)",
+          "Sehtest (nicht älter als 2 Jahre)",
+          "Erste-Hilfe-Kurs"
+        ],
+        "theory": [
+          "12 Doppelstunden Grundstoff",
+          "2 Doppelstunden Zusatzstoff (Klasse B)"
+        ],
+        "practice": [
+          "Mindestens 10 Fahrstunden (à 45 Min.) auf einem Schaltwagen",
+          "15 Min. Schaltkompetenz-Test (intern mit Fahrlehrer)",
+          "12 Sonderfahrten (meist auf Automatik)",
+          "Praktische Prüfung (55 Minuten, auf Automatik)"
+        ]
+      },
+      "B78": {
+        "title": "Klasse B78",
+        "desc": "Reine Automatik-Ausbildung. Modern, stressfrei und zukunftsorientiert.",
+        "requirements": [
+          "Mindestalter: 18 Jahre (17 Jahre bei BF17)",
+          "Lichtbild (biometrisch)",
+          "Sehtest (nicht älter als 2 Jahre)",
+          "Erste-Hilfe-Kurs"
+        ],
+        "theory": [
+          "12 Doppelstunden Grundstoff",
+          "2 Doppelstunden Zusatzstoff (Klasse B)",
+          "Theorieprüfung (frühestens 3 Monate vor Geburtstag)"
+        ],
+        "practice": [
+          "Ausbildung und Prüfung komplett auf Automatik",
+          "Sonderfahrten wie bei Klasse B",
+          "Eintragung der Schlüsselzahl 78 im Führerschein",
+          "Praktische Prüfung (55 Minuten, auf Automatik)"
+        ]
+      },
+      "A": {
+        "title": "Klasse A",
+        "desc": "Schwere Motorräder (falls angeboten)."
+      },
+      "A2": {
+        "title": "Klasse A2",
+        "desc": "Der Einstieg. Mittelschwere Motorräder bis 35 kW."
+      },
+      "A1": {
+        "title": "Klasse A1",
+        "desc": "Leichtkrafträder bis 125 ccm. Der Start ab 16 Jahren."
+      },
+      "BE": {
+        "title": "Klasse BE",
+        "desc": "Anhängerführerschein. Für Kombinationen über 3.500 kg zGG.",
+        "requirements": [
+          "Vorbesitz der Klasse B",
+          "Lichtbild (biometrisch)",
+          "Sehtest"
+        ],
+        "theory": [
+          "Keine Theorieprüfung erforderlich!"
+        ],
+        "practice": [
+          "Grundausbildung nach Bedarf",
+          "3 Sonderfahrten Überland (à 45 Min.)",
+          "1 Sonderfahrt Autobahn (à 45 Min.)",
+          "1 Sonderfahrt bei Dunkelheit (à 45 Min.)",
+          "Praktische Prüfung (45 Minuten)"
+        ]
+      },
+      "B96": {
+        "title": "Klasse B96",
+        "desc": "Schwere Anhänger. Für Kombinationen bis 4.250 kg zGG.",
+        "requirements": [
+          "Vorbesitz der Klasse B",
+          "Keine Prüfungen erforderlich!"
+        ],
+        "theory": [
+          "2,5 Stunden theoretische Schulung"
+        ],
+        "practice": [
+          "3,5 Stunden praktische Übungen",
+          "1 Stunde fahrpraktische Übung im Realverkehr",
+          "Teilnahmebescheinigung reicht zur Vorlage bei der Führerscheinstelle"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "legal_links": {
+      "imp": "Impressum",
+      "ds": "Datenschutz",
+      "agb": "AGB"
+    },
+    "slogan": "Sicher fahren. Selbstbewusst ankommen.",
+    "links": "Links",
+    "legal": "Rechtliches",
+    "social": "Folge uns",
+    "copyright": "© 2024 Fahrschule Bär. Alle Rechte vorbehalten.",
+    "premium": "Premium Fahrausbildung",
+    "navigation": "Navigation",
+    "offer": "Ausbildung"
+  },
+  "theory": {
+    "weekday": "Wochentag",
+    "subtitle": "Theorieunterricht",
+    "title": "Wann & Wo",
+    "desc": "Unser strukturierter Ausbildungsplan für deine Theorie-Stunden. Wähle den Kurs, der sprachlich am besten zu dir passt.",
+    "plan_title": "Aktueller Theorieplan",
+    "plan_week": "Plane deine Woche",
+    "days": {
+      "mon": "Montag",
+      "tue": "Dienstag",
+      "wed": "Mittwoch",
+      "thu": "Donnerstag",
+      "fri": "Freitag",
+      "sat": "Samstag",
+      "sun": "Sonntag"
+    },
+    "location": {
+      "title": "Standort Marzahn",
+      "addr": "Marzahner Promenade 25, 12679 Berlin"
+    },
+    "lang_ru": "Russisch",
+    "lang_de": "Deutsch"
+  },
+  "faq": {
+    "subtitle": "Häufige Fragen",
+    "title": "Was möchtest du wissen?",
+    "items": {
+      "1": {
+        "q": "Wie lange dauert der Führerschein in der Regel?",
+        "a": "Das hängt von deiner Zeit und Motivation ab. Bei kontinuierlichen Fahrstunden (1-2 pro Woche) kannst du mit etwa 3 bis 5 Monaten rechnen. Wir bieten auch Intensivkurse an."
+      },
+      "2": {
+        "q": "Wie viele Fahrstunden brauche ich?",
+        "a": "Gesetzlich vorgeschrieben sind 12 Sonderfahrten (5x Überland, 4x Autobahn, 3x Nacht). Die Anzahl der normalen Übungsstunden hängt von deinen individuellen Fortschritten ab – wir fahren so viele wie nötig, aber so wenige wie möglich."
+      },
+      "3": {
+        "q": "Kann ich online einen Termin vereinbaren?",
+        "a": "Ja! Nutze einfach unser Anmeldeformular auf der Website. Wir rufen dich dann an, um deinen ersten Termin und den weiteren Ablauf zu besprechen."
+      },
+      "4": {
+        "q": "Darf ich den Theorieunterricht auch in anderen Filialen besuchen?",
+        "a": "Falls wir weitere Standorte eröffnen, bist du völlig flexibel und kannst Theorie-Einheiten standortübergreifend besuchen, um schneller fertig zu werden."
+      },
+      "5": {
+        "q": "Was kostet der Führerschein?",
+        "a": "Die Gesamtkosten variieren je nach benötigten Fahrstunden. Eine grobe Schätzung für Klasse B liegt derzeit zwischen 2.500 € und 3.500 €. Gerne beraten wir dich hierzu persönlich und transparent."
+      }
+    },
+    "more": "Noch Fragen?",
+    "contact": "Kontaktiere uns einfach."
+  },
+  "reg": {
+    "form": {
+      "classes": {
+        "b": "Klasse B / B197",
+        "be": "Klasse BE",
+        "a": "Klasse A / A2 / A1",
+        "am": "Klasse AM"
+      },
+      "msg": "Nachricht (Optional)",
+      "submit": "Anmeldung absenden",
+      "title_q": "Führerschein?",
+      "phone2": "Telefonnummer",
+      "dob": "Geburtsdatum",
+      "personal": "Persönliche Daten",
+      "fname": "Vorname",
+      "lname": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "class": "Gewünschte Klasse",
+      "class_sel": "Klasse wählen",
+      "success": "Vielen Dank für deine Anmeldung! Wir melden uns in Kürze bei dir.",
+      "error": "Es gab ein Problem. Bitte versuche es später noch einmal."
+    },
+    "steps": {
+      "1": {
+        "title": "Formular ausfüllen",
+        "desc": "Hinterlasse uns deine Kontaktdaten und deinen Wunsch-Führerschein."
+      },
+      "2": {
+        "title": "Wir rufen zurück",
+        "desc": "Wir klären offene Fragen und planen deinen Ausbildungsbeginn."
+      },
+      "3": {
+        "title": "Startschuss",
+        "desc": "Du startest mit der Theorie und bist bald sicher auf der Straße unterwegs."
+      }
+    },
+    "subtitle": "Anmeldung",
+    "title": "Dein Start bei uns",
+    "desc": "Melde dich bequem online an. Wir melden uns umgehend bei dir zurück, um alle Details zu besprechen und deinen Ausbildungsvertrag vorzubereiten."
+  },
+  "loc": {
+    "address_line": "Musterstraße 123",
+    "city_line": "12345 Musterstadt",
+    "hours_title": "Öffnungszeiten & Anmeldung",
+    "location_title": "Standort",
+    "maps": {
+      "title": "Google Maps Integration",
+      "desc": "Platzhalter für iframe"
+    },
+    "subtitle": "Unser Standort",
+    "title": "Hier findest du uns",
+    "desc": "Komm gerne während unserer Öffnungszeiten persönlich vorbei. Wir beraten dich unverbindlich und beantworten alle deine Fragen zur Ausbildung.",
+    "address": "Marzahner Promenade 25",
+    "city": "12679 Berlin",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Öffnungszeiten",
+    "hours_wd": "Montag - Freitag",
+    "hours_we": "Samstag & Sonntag",
+    "closed": "Geschlossen",
+    "time": "10:00 - 18:00 Uhr"
+  },
+  "about": {
+    "title": "Wir sind Fahrschule Bär.",
+    "p1": "Unser Name ist Programm: Der Bär steht für <strong className=\"text-white\">Stärke, Ruhe und Souveränität</strong>. Genau das vermitteln wir dir in unserer Ausbildung. Bei uns lernst du nicht in Hektik, sondern mit System und Geduld.",
+    "p2": "Wir glauben daran, dass eine gute Fahrausbildung mehr ist als das reine Bestehen einer Prüfung. Es geht darum, dich auf den realen Straßenverkehr vorzubereiten – damit du in jeder Situation einen kühlen Kopf bewahrst und sicher ankommst.",
+    "p3": "Mit modernen Lehrmethoden, einem hochklassigen Fuhrpark und einem Team, das seinen Beruf liebt, machen wir deinen Weg zum Führerschein zu einem positiven und unvergesslichen Erlebnis.",
+    "exp": "Jahre Erfahrung<br/>in der Ausbildung",
+    "rate": "Erfolgsquote",
+    "quality": "Geprüfte Qualität",
+    "team_title": "Unser Team"
+  },
+  "kdetails": {
+    "back": "Zurück zur Übersicht",
+    "req": "Voraussetzungen",
+    "theory": "Theorie",
+    "practice": "Praktische Ausbildung",
+    "register_for": "Jetzt anmelden für"
+  },
+  "legal": {
+    "tabs": {
+      "impressum": "Impressum",
+      "datenschutz": "Datenschutz",
+      "agb": "AGB"
+    },
+    "imp": {
+      "angaben": "Angaben gemäß § 5 TMG",
+      "vertretung": "Vertreten durch",
+      "kontakt": "Kontakt",
+      "register": "Registereintrag",
+      "ust": "Umsatzsteuer-ID",
+      "verantwortlich": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
+    },
+    "ds": {
+      "t1": "1. Datenschutz auf einen Blick",
+      "t1_1": "Allgemeine Hinweise",
+      "t1_p": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+      "t2": "2. Datenerfassung auf unserer Website",
+      "t2_1": "Wer ist verantwortlich für die Datenerfassung?",
+      "t2_1p": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.",
+      "t2_2": "Wie erfassen wir Ihre Daten?",
+      "t2_2p": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst.",
+      "t3": "3. Analyse-Tools und Tools von Drittanbietern",
+      "t3_p": "Beim Besuch unserer Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit Cookies und mit sogenannten Analyseprogrammen. Die Analyse Ihres Surf-Verhaltens erfolgt in der Regel anonym.",
+      "t4": "4. Ihre Rechte",
+      "t4_p": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen."
+    },
+    "agb": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "stand": "Stand: [Datum einfügen]",
+      "p1": "§ 1 Geltungsbereich",
+      "p1_t": "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge über die Fahrausbildung zwischen der Fahrschule Bär (im Folgenden „Fahrschule“) und dem Fahrschüler.",
+      "p2": "§ 2 Bestandteil der Ausbildung",
+      "p2_t": "Die Fahrausbildung umfasst theoretischen und praktischen Fahrunterricht gemäß den gesetzlichen Bestimmungen. Die Fahrschule verpflichtet sich, den Fahrschüler gewissenhaft auf die Fahrerlaubnisprüfung vorzubereiten.",
+      "p3": "§ 3 Entgelte und Zahlungsbedingungen",
+      "p3_t": "1. Die Entgelte für die Fahrausbildung richten sich nach der bei Vertragsabschluss gültigen Preisliste.<br /><br />2. Der Grundbetrag ist bei Vertragsabschluss fällig. Fahrstunden sind grundsätzlich vor Fahrtantritt zu bezahlen.",
+      "p4": "§ 4 Absage von Fahrstunden",
+      "p4_t": "Vereinbarte Fahrstunden können bis zu [48 Stunden] vor Beginn kostenfrei abgesagt werden. Bei späteren Absagen behält sich die Fahrschule vor, [X %] des Fahrstundenentgelts in Rechnung zu stellen, sofern der Termin nicht anderweitig vergeben werden konnte.",
+      "p5": "§ 5 Kündigung",
+      "p5_t": "Der Ausbildungsvertrag kann von beiden Seiten unter Einhaltung einer Frist von [2 Wochen] gekündigt werden. Ein wichtiger Grund zur fristlosen Kündigung bleibt hiervon unberührt."
+    }
+  }
+}

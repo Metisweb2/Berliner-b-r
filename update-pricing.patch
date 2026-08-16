@@ -1,0 +1,106 @@
+--- src/components/Pricing.tsx
++++ src/components/Pricing.tsx
+@@ -1,7 +1,7 @@
+ import { useState, useEffect } from 'react';
+ import { Section } from './ui/Section';
+ import { motion, AnimatePresence } from 'motion/react';
+-import { BookOpen, Car, Map, MonitorCheck, Award, GraduationCap, Tag } from 'lucide-react';
++import { Tag } from 'lucide-react';
+ import { useTranslation } from 'react-i18next';
+ import { doc, getDoc } from 'firebase/firestore';
+ import { db } from '../firebase';
+@@ -9,7 +9,6 @@
+ export type PriceItem = {
+   key: string;
+   price: string;
+-  icon: any;
+   highlight?: boolean;
+ };
+ 
+@@ -21,46 +20,46 @@
+   {
+     id: 'b',
+     items: [
+-      { key: 'base', price: '350 €', icon: BookOpen, highlight: true },
+-      { key: 'practice', price: '65 €', icon: Car },
+-      { key: 'special', price: '75 €', icon: Map },
+-      { key: 'theory_exam', price: '60 €', icon: MonitorCheck },
+-      { key: 'practice_exam', price: '150 €', icon: Award },
++      { key: 'base', price: '350 €', highlight: true },
++      { key: 'practice', price: '65 €' },
++      { key: 'special', price: '75 €' },
++      { key: 'theory_exam', price: '60 €' },
++      { key: 'practice_exam', price: '150 €' },
+     ]
+   },
+   {
+     id: 'b197',
+     items: [
+-      { key: 'base', price: '350 €', icon: BookOpen, highlight: true },
+-      { key: 'practice', price: '65 €', icon: Car },
+-      { key: 'special', price: '75 €', icon: Map },
+-      { key: 'theory_exam', price: '60 €', icon: MonitorCheck },
+-      { key: 'practice_exam', price: '150 €', icon: Award },
++      { key: 'base', price: '350 €', highlight: true },
++      { key: 'practice', price: '65 €' },
++      { key: 'special', price: '75 €' },
++      { key: 'theory_exam', price: '60 €' },
++      { key: 'practice_exam', price: '150 €' },
+     ]
+   },
+   {
+     id: 'be',
+     items: [
+-      { key: 'base', price: '200 €', icon: BookOpen, highlight: true },
+-      { key: 'practice', price: '75 €', icon: Car },
+-      { key: 'special', price: '85 €', icon: Map },
+-      { key: 'practice_exam', price: '160 €', icon: Award },
++      { key: 'base', price: '200 €', highlight: true },
++      { key: 'practice', price: '75 €' },
++      { key: 'special', price: '85 €' },
++      { key: 'practice_exam', price: '160 €' },
+     ]
+   },
+   {
+     id: 'b96',
+     items: [
+-      { key: 'b96_course', price: '399 €', icon: GraduationCap, highlight: true },
++      { key: 'b96_course', price: '399 €', highlight: true },
+     ]
+   },
+   {
+     id: 'a',
+     items: [
+-      { key: 'base', price: '300 €', icon: BookOpen, highlight: true },
+-      { key: 'practice', price: '70 €', icon: Car },
+-      { key: 'special', price: '80 €', icon: Map },
+-      { key: 'theory_exam', price: '60 €', icon: MonitorCheck },
+-      { key: 'practice_exam', price: '170 €', icon: Award },
++      { key: 'base', price: '300 €', highlight: true },
++      { key: 'practice', price: '70 €' },
++      { key: 'special', price: '80 €' },
++      { key: 'theory_exam', price: '60 €' },
++      { key: 'practice_exam', price: '170 €' },
+     ]
+   }
+ ];
+@@ -156,7 +155,7 @@
+               transition={{ duration: 0.3 }}
+               className="flex flex-col gap-4 max-w-3xl mx-auto"
+             >
+-              {currentData.items.map((item) => {
+-                const Icon = item.icon;
++              {currentData.items.map((item, index) => {
++                const displayIndex = (index + 1).toString().padStart(2, '0');
+                 return (
+                   <div 
+@@ -168,8 +167,8 @@
+                     <div className="flex items-center gap-4 sm:gap-6">
+                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${
+-                        item.highlight ? 'bg-white text-black' : 'bg-white/5 text-white'
++                        item.highlight ? 'bg-white text-black font-black' : 'bg-white/5 text-white/50 font-bold'
+                       }`}>
+-                        <Icon className="w-6 h-6" strokeWidth={1.5} />
++                        {displayIndex}
+                       </div>
+                       <div>

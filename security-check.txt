@@ -1,0 +1,6 @@
+Row Level Security (RLS) confirmed on:
+- /messages (Only Admin Read/Delete, Public Create)
+- /videos, /team, /fleet, /settings (Only Admin Write, Public Read)
+- Admin defined as mobilwertberlin@gmail.com or role='admin'
+No hardcoded secrets found.
+Translations all correctly mapped.

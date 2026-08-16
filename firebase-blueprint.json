@@ -1,0 +1,26 @@
+{
+  "collections": [
+    {
+      "name": "videos",
+      "description": "Stores creator videos and metadata.",
+      "fields": [
+        { "name": "creatorName", "type": "string" },
+        { "name": "description", "type": "string" },
+        { "name": "videoUrl", "type": "string" },
+        { "name": "thumbnailUrl", "type": "string" },
+        { "name": "status", "type": "string", "description": "pending, approved, or rejected" },
+        { "name": "userId", "type": "string" },
+        { "name": "createdAt", "type": "timestamp" }
+      ],
+      "rules": "Users can create videos. Anyone can read approved videos. Admins can read, update, delete all videos. Creators can read their own pending videos."
+    },
+    {
+      "name": "users",
+      "description": "Stores user roles and profiles.",
+      "fields": [
+        { "name": "role", "type": "string", "description": "admin or creator" }
+      ],
+      "rules": "Users can read their own profile. Admins can read all."
+    }
+  ]
+}

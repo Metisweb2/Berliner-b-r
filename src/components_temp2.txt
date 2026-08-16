@@ -1,0 +1,416 @@
+import { motion } from 'motion/react';
+import { Section } from './ui/Section';
+import { CalendarDays, BookOpen, Clock, Sparkles } from 'lucide-react';
+
+const schedule = [
+  { day: 'Montag', ru: null, de: '18:00 – 19:30 Uhr' },
+  { day: 'Dienstag', ru: '18:00 – 19:30 Uhr', de: null },
+  { day: 'Mittwoch', ru: null, de: null },
+  { day: 'Donnerstag', ru: null, de: '18:00 – 19:30 Uhr' },
+  { day: 'Freitag', ru: '18:00 – 19:30 Uhr', de: null },
+  { day: 'Samstag', ru: null, de: null },
+  { day: 'Sonntag', ru: null, de: null },
+];
+
+export function TheorySchedule() {
+  return (
+    <Section id="theorie" className="bg-transparent relative overflow-hidden pb-32">
+      {/* Animated Background Accents */}
+      <motion.div 
+        animate={{ 
+          scale: [1, 1.2, 1],
+          opacity: [0.3, 0.5, 0.3],
+        }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none" 
+      />
+      <motion.div 
+        animate={{ 
+          scale: [1, 1.5, 1],
+          opacity: [0.2, 0.4, 0.2],
+        }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-gold/10 blur-[100px] rounded-full pointer-events-none" 
+      />
+
+      <div className="max-w-5xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, scale: 0, rotate: -180 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 200, damping: 20 }}
+            className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-white/10 to-white/[0.02] border border-white/20 shadow-[0_0_30px_rgba(255,255,255,0.1)] mb-8 backdrop-blur-xl"
+          >
+            <BookOpen className="w-10 h-10 text-primary drop-shadow-[0_0_15px_rgba(217,4,41,0.5)]" />
+          </motion.div>
+          
+          <motion.h2 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="text-4xl md:text-6xl font-black mb-6 text-white tracking-tight"
+          >
+            Theorieunterricht
+          </motion.h2>
+          
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            className="text-neutral-400 max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed"
+          >
+            Unser strukturierter Ausbildungsplan für deine Theorie-Stunden. Wähle den Kurs, der sprachlich am besten zu dir passt.
+          </motion.p>
+        </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.6, type: "spring", stiffness: 100 }}
+          className="relative group"
+        >
+          {/* Animated Glow Border around the table */}
+          <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/50 via-gold/50 to-primary/50 rounded-[2rem] opacity-30 group-hover:opacity-100 blur transition-opacity duration-1000" />
+          
+          <div className="bg-[#111111]/90 backdrop-blur-2xl border border-white/10 rounded-[2rem] overflow-hidden shadow-2xl relative z-10">
+            
+            {/* Table Header */}
+            <div className="grid grid-cols-3 bg-white/[0.04] border-b border-white/10">
+              <div className="p-6 md:p-8 flex items-center gap-3">
+                <CalendarDays className="w-5 h-5 text-neutral-400 hidden sm:block" />
+                <span className="font-bold text-white tracking-widest uppercase text-xs md:text-sm">Wochentag</span>
+              </div>
+              <div className="p-6 md:p-8 text-center border-l border-white/5 relative overflow-hidden">
+                <span className="font-bold text-white tracking-widest uppercase text-xs md:text-sm relative z-10 flex items-center justify-center gap-2">
+                  Russisch <Sparkles className="w-4 h-4 text-gold opacity-50" />
+                </span>
+              </div>
+              <div className="p-6 md:p-8 text-center border-l border-white/5 relative overflow-hidden">
+                <span className="font-bold text-white tracking-widest uppercase text-xs md:text-sm relative z-10 flex items-center justify-center gap-2">
+                  Deutsch <Sparkles className="w-4 h-4 text-primary opacity-50" />
+                </span>
+              </div>
+            </div>
+
+            {/* Table Body */}
+            <div className="divide-y divide-white/5 relative">
+              {schedule.map((row, i) => (
+                <motion.div 
+                  key={row.day}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.7, delay: 0.8 + (i * 0.1), type: "spring", stiffness: 100 }}
+                  whileHover={{ 
+                    scale: 1.01, 
+                    backgroundColor: "rgba(255,255,255,0.03)",
+                    x: 10,
+                    transition: { duration: 0.2 }
+                  }}
+                  className="grid grid-cols-3 group/row relative overflow-hidden cursor-default"
+                >
+                  {/* Subtle active indicator line on hover */}
+                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-gold opacity-0 group-hover/row:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="p-5 md:p-7 flex items-center font-bold text-neutral-400 group-hover/row:text-white transition-colors duration-300 pl-8 md:pl-10">
+                    {row.day}
+                  </div>
+                  
+                  <div className="p-5 md:p-7 text-center border-l border-white/5 flex items-center justify-center">
+                    {row.ru ? (
+                      <motion.div 
+                        whileHover={{ scale: 1.05 }}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/20 text-gold font-bold text-sm md:text-base shadow-[0_0_15px_rgba(245,166,35,0.15)] group-hover/row:border-gold/40 transition-colors"
+                      >
+                        <Clock className="w-4 h-4 hidden sm:block" />
+                        {row.ru}
+                      </motion.div>
+                    ) : (
+                      <span className="text-neutral-700 font-light">—</span>
+                    )}
+                  </div>
+
+                  <div className="p-5 md:p-7 text-center border-l border-white/5 flex items-center justify-center">
+                    {row.de ? (
+                      <motion.div 
+                        whileHover={{ scale: 1.05 }}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-sm md:text-base shadow-[0_0_15px_rgba(217,4,41,0.15)] group-hover/row:border-primary/40 transition-colors"
+                      >
+                        <Clock className="w-4 h-4 hidden sm:block" />
+                        {row.de}
+                      </motion.div>
+                    ) : (
+                      <span className="text-neutral-700 font-light">—</span>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </Section>
+  );
+}
+import { useState } from 'react';
+import { Section } from './ui/Section';
+import { motion, AnimatePresence } from 'motion/react';
+import { Plus, Minus } from 'lucide-react';
+
+const faqs = [
+  {
+    q: 'Wie lange dauert der Führerschein in der Regel?',
+    a: 'Das hängt von deiner Zeit und Motivation ab. Bei kontinuierlichen Fahrstunden (1-2 pro Woche) kannst du mit etwa 3 bis 5 Monaten rechnen. Wir bieten auch Intensivkurse an.',
+  },
+  {
+    q: 'Wie viele Fahrstunden brauche ich?',
+    a: 'Gesetzlich vorgeschrieben sind 12 Sonderfahrten (5x Überland, 4x Autobahn, 3x Nacht). Die Anzahl der normalen Übungsstunden hängt von deinen individuellen Fortschritten ab – wir fahren so viele wie nötig, aber so wenige wie möglich.',
+  },
+  {
+    q: 'Kann ich online einen Termin vereinbaren?',
+    a: 'Ja! Nutze einfach unser Anmeldeformular auf der Website. Wir rufen dich dann an, um deinen ersten Termin und den weiteren Ablauf zu besprechen.',
+  },
+  {
+    q: 'Darf ich den Theorieunterricht auch in anderen Filialen besuchen?',
+    a: 'Falls wir weitere Standorte eröffnen, bist du völlig flexibel und kannst Theorie-Einheiten standortübergreifend besuchen, um schneller fertig zu werden.',
+  },
+  {
+    q: 'Was kostet der Führerschein?',
+    a: 'Die Gesamtkosten variieren je nach benötigten Fahrstunden. Eine grobe Schätzung für Klasse B liegt derzeit zwischen 2.500 € und 3.500 €. Gerne beraten wir dich hierzu persönlich und transparent.',
+  },
+];
+
+export function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  return (
+    <Section id="faq" className="bg-neutral-900 border-t border-white/5">
+      <div className="max-w-3xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Häufige Fragen</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto rounded-full" />
+        </div>
+
+        <div className="space-y-4">
+          {faqs.map((faq, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div
+                key={i}
+                className={`border rounded-2xl overflow-hidden transition-colors duration-300 ${
+                  isOpen ? 'bg-dark-card border-primary/30' : 'bg-transparent border-white/10 hover:border-white/30'
+                }`}
+              >
+                <button
+                  className="w-full flex items-center justify-between p-6 text-left"
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                >
+                  <span className={`font-semibold text-lg transition-colors ${isOpen ? 'text-white' : 'text-neutral-300'}`}>
+                    {faq.q}
+                  </span>
+                  <div className={`flex-shrink-0 ml-4 p-2 rounded-full transition-colors ${isOpen ? 'bg-primary/10 text-primary' : 'bg-white/5 text-neutral-400'}`}>
+                    {isOpen ? <Minus className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
+                  </div>
+                </button>
+                
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    >
+                      <div className="px-6 pb-6 text-neutral-400 leading-relaxed border-t border-white/5 pt-4">
+                        {faq.a}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </Section>
+  );
+}
+import { Section } from './ui/Section';
+import { MapPin, Clock, Phone, Mail } from 'lucide-react';
+
+export function Location() {
+  return (
+    <Section id="contact">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+        <div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-8">Hier findest du uns.</h2>
+          
+          <div className="space-y-8">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+                <MapPin className="w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-white mb-1">Standort</h4>
+                <p className="text-neutral-400">Musterstraße 123<br />12345 Musterstadt</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 text-gold">
+                <Clock className="w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-white mb-1">Öffnungszeiten & Anmeldung</h4>
+                <p className="text-neutral-400">
+                  Mo. & Mi.: 16:00 - 19:00 Uhr<br />
+                  Di. & Do.: 17:00 - 19:00 Uhr
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center flex-shrink-0 text-white">
+                <Phone className="w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-white mb-1">Telefon</h4>
+                <a href="tel:+49123456789" className="text-neutral-400 hover:text-primary transition-colors">0123 / 456 789</a>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center flex-shrink-0 text-white">
+                <Mail className="w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-white mb-1">E-Mail</h4>
+                <a href="mailto:info@fahrschule-baer.de" className="text-neutral-400 hover:text-primary transition-colors">info@fahrschule-baer.de</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden border border-white/10 group">
+          {/* Subtle glow behind map */}
+          <div className="absolute inset-0 bg-primary/20 blur-[100px] -z-10 group-hover:bg-primary/30 transition-colors duration-500" />
+          
+          {/* Placeholder for real Google Maps iframe */}
+          <div className="w-full h-full bg-neutral-800 flex items-center justify-center relative z-10">
+            <div className="text-center p-6">
+              <MapPin className="w-12 h-12 text-neutral-600 mx-auto mb-4" />
+              <p className="text-neutral-500 font-medium">Google Maps Integration<br/><span className="text-sm font-normal">Platzhalter für iframe</span></p>
+            </div>
+            
+            {/* Visual overlay to keep it looking premium */}
+            <div className="absolute inset-0 pointer-events-none bg-dark-bg/20" />
+          </div>
+        </div>
+      </div>
+    </Section>
+  );
+}
+import { Section } from './ui/Section';
+import { Send } from 'lucide-react';
+
+export function Registration() {
+  return (
+    <Section id="register" className="bg-neutral-900 border-t border-white/5 relative overflow-hidden">
+      {/* Background Graphic */}
+      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-10 pointer-events-none">
+         <div className="w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary via-dark-bg to-transparent blur-[100px]" />
+      </div>
+
+      <div className="relative z-10 flex flex-col lg:flex-row gap-16">
+        <div className="lg:w-5/12">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+            Bereit für deinen <br />
+            <span className="text-primary">Führerschein?</span>
+          </h2>
+          <p className="text-neutral-400 text-lg mb-8">
+            Melde dich jetzt unverbindlich an. Wir setzen uns umgehend mit dir in Verbindung, um alle Details und den optimalen Startzeitpunkt zu besprechen.
+          </p>
+          
+          <div className="space-y-6">
+            <div className="flex gap-4 items-start">
+              <div className="w-10 h-10 rounded-full bg-dark-bg border border-white/10 flex items-center justify-center flex-shrink-0 text-gold font-bold">1</div>
+              <div>
+                <h4 className="font-bold text-white mb-1">Formular ausfüllen</h4>
+                <p className="text-sm text-neutral-400">Hinterlasse uns deine Kontaktdaten und deinen Wunsch-Führerschein.</p>
+              </div>
+            </div>
+            <div className="flex gap-4 items-start">
+              <div className="w-10 h-10 rounded-full bg-dark-bg border border-white/10 flex items-center justify-center flex-shrink-0 text-gold font-bold">2</div>
+              <div>
+                <h4 className="font-bold text-white mb-1">Wir rufen zurück</h4>
+                <p className="text-sm text-neutral-400">Wir klären offene Fragen und planen deinen Ausbildungsbeginn.</p>
+              </div>
+            </div>
+            <div className="flex gap-4 items-start">
+              <div className="w-10 h-10 rounded-full bg-dark-bg border border-white/10 flex items-center justify-center flex-shrink-0 text-gold font-bold">3</div>
+              <div>
+                <h4 className="font-bold text-white mb-1">Startschuss</h4>
+                <p className="text-sm text-neutral-400">Du startest mit der Theorie und bist bald sicher auf der Straße unterwegs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:w-7/12">
+          <form className="bg-dark-card p-8 rounded-3xl border border-white/10 shadow-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-neutral-400">Vorname</label>
+                <input type="text" className="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Max" />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-neutral-400">Nachname</label>
+                <input type="text" className="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Mustermann" />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-neutral-400">E-Mail</label>
+                <input type="email" className="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="max@beispiel.de" />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-neutral-400">Telefonnummer</label>
+                <input type="tel" className="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Für Rückfragen" />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-neutral-400">Geburtsdatum</label>
+                <input type="date" className="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors color-scheme-dark" />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-neutral-400">Gewünschte Klasse</label>
+                <select className="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors appearance-none">
+                  <option value="">Bitte wählen...</option>
+                  <option value="b">Klasse B / B197</option>
+                  <option value="be">Klasse BE</option>
+                  <option value="a">Klasse A / A2 / A1</option>
+                  <option value="am">Klasse AM</option>
+                  <option value="other">Noch unsicher / Beratung</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="space-y-2 mb-8">
+              <label className="text-sm font-medium text-neutral-400">Nachricht (Optional)</label>
+              <textarea rows={4} className="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none" placeholder="Hast du besondere Wünsche oder Fragen?"></textarea>
+            </div>
+
+            <button type="button" className="w-full bg-gradient-to-r from-primary to-red-600 hover:from-primary-hover hover:to-red-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all transform hover:scale-[1.02]">
+              Anmeldung absenden <Send className="w-5 h-5" />
+            </button>
+            <p className="text-xs text-neutral-500 mt-4 text-center">
+              Deine Daten werden sicher übertragen und nur zur Kontaktaufnahme verwendet.
+            </p>
+          </form>
+        </div>
+      </div>
+    </Section>
+  );
+}
